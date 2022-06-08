@@ -4,9 +4,10 @@ import "./AreaDados.css"
 export default function AreaDados() {
   return (
     <div className="areaDados">
-      Mensagem da Área de Dados
-
+      Saúde Total
+      <img src="/orm/img/capa.jpg"></img>
     </div>
+    
   );
 }
 

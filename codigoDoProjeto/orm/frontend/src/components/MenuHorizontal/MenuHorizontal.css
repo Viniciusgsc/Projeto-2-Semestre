@@ -1,25 +1,14 @@
-.menuHorizontal {
-  height: 5vh;
-  border: 0.2vh solid darkmagenta;
-
-  margin: 0.2% 0.2% 0.2% 0.2%;
-  background-color: beige;
-
-  padding-top: 0.9%;
-
-  box-shadow: 0.1% 0.1% #0e89af;
-  color: red;
-
-  text-align: center;
-}
 
 .navMenu ul {
   list-style: none;
   text-align: left;
+  text-align: center;
+  box-shadow: 0.5px;
 }
 
 .navMenu ul li {
   display: inline;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .navMenu ul li a{
@@ -30,7 +19,7 @@
 }
 
 .navMenu ul li a:hover{
-  color: red;
+  color: rgb(205, 101, 101);
   font-weight: bold;
   font-size: 32;
 }

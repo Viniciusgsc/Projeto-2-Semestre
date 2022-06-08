@@ -7,10 +7,10 @@ function MenuHorizontal() {
   return (
     <div className="menuHorizontal">
       <nav className="navMenu">
-        <ul>
-          <li> <Link to="/">Início </Link> </li>          
-          <li> <Link to="/categorias">Categorias </Link> </li>
-          <li> <Link to="/departamentos">Departamentos </Link> </li>          
+        <ul className="menus">
+          <li> <Link to="/">Home </Link> </li>          
+          <li> <Link to="/categorias">Tabela dos Usuarios </Link> </li>
+          <li> <Link to="/departamentos">IMC </Link> </li>          
         </ul>
       </nav>
     </div>
