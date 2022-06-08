@@ -4,6 +4,7 @@
   text-align: left;
   text-align: center;
   box-shadow: 0.5px;
+  font-size: 30px;
 }
 
 .navMenu ul li {
@@ -19,7 +20,13 @@
 }
 
 .navMenu ul li a:hover{
-  color: rgb(205, 101, 101);
+  color: rgb(85, 85, 85);
   font-weight: bold;
   font-size: 32;
+}
+.imagem {
+ display: block;
+text-align: center;
+  
+
 }
