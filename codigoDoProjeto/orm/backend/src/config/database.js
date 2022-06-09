@@ -2,7 +2,7 @@ module.exports = {
     host: 'localhost',
     dialect: 'mysql',
     username: 'root',
-    password: '92717148',
+    password: 'mysql4321',
     database: 'webiiorm',
     define: {
         timestamps:true,
