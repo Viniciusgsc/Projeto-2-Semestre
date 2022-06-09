@@ -14,6 +14,12 @@ export default function AreaDados() {
   <div className="areaDados">
       <aside>
         <h1> Quem somos?</h1>
+
+
+
+
+
+        
         <article>
           <div class="area">
             <div className ="imc">
