@@ -4,8 +4,7 @@ import "./Rodape.css"
 function Rodape() {
   return (
     <div className="rodape">
-      By DSM - Web-II
-
+      <h1 className="msg">Projeto Interdisciplinar - 2º Semestre</h1>
     </div>
   );
 }

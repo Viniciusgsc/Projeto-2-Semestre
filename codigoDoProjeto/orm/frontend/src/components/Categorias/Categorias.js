@@ -27,14 +27,14 @@ function Categorias() {
       <Cabecalho />
       <MenuHorizontal />
       
-      <legend>Registros de Categorias Cadastrados</legend>
+      <legend>Registros de usuários Cadastrados</legend>
 
       <div className="tabela">
         <table className="table table-responsive">
           <thead>
             <tr id='titulo'>
               <th id='t_codigo'> Código </th>
-              <th id='t_descricao'> Descrição da Categoria </th>
+              <th id='t_descricao'> Descrição dos usuários </th>
               <th id='t_dtinclusao'> Inclusão </th>
               <th id='t_dtalteracao'> Alteração </th>
               <th id="novo"> <a class="btn btn-success btn-block">Novo Registro</a> </th>              

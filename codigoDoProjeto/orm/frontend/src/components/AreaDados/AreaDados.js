@@ -4,33 +4,23 @@ import "./AreaDados.css"
 
 export default function AreaDados() {
   return (
-  
-<html lang="pt-br">
-  <head>
-    <title>Título da página</title>
-    <meta charset="utf-8"></meta>
-  </head>
   <body>
   <div className="areaDados">
       <aside>
-        <h1> Quem somos?</h1>
-
-
-
-
-
-        
+      <div className="imageem">
+      
+      </div>  
         <article>
           <div class="area">
             <div className ="imc">
                 <h1>Calculador de IMC</h1>
                   <div class="input_area">
                       <h2>Altura (cm) </h2>
-                      <input id="height" type="number"></input>
+                      <input id="height" type="number" placeholder="Digite sua Altura"></input>
                   </div>
                 <div class="input_area">
-                  <h2 h2>Peso (kg) </h2>
-                    <input id="weight" type="number"></input>
+                  <h2>Peso (kg) </h2>
+                    <input id="weight" type="number" placeholder="Digite seu Peso"></input>
                 </div>
               <button onclick="calculate()">Calcular</button>
               <textarea name="" id="text_area" rows="8"></textarea>
@@ -40,11 +30,7 @@ export default function AreaDados() {
       </aside>
     </div>
   </body>
-</html>
-    
-    
-   
   ); 
-     
+   
 }
 
