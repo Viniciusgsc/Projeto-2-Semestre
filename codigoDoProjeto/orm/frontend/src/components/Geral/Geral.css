@@ -1,6 +1,44 @@
 .geral {
   height: 99.5vh;
   border: 0.2vh solid #a8a8a8;
-  background-color: #ffffff;
+  background-color:  #9aff9a;
+}
+input{
+  height: 1.5em;
+}
+textarea{
+  width: 100%;
+  margin-top: 2em;
+}
+.imc{
+  background-color:  #ffffff;
+  display: flex;
+  padding: 1.5em;
+  border-radius: 0.5em;
+  flex-direction: column;
+  align-items: center;
+  width: 20em;
+  /* margin-left: 1000px; */
+  /* top: 150px; */
+  justify-content: center; /*Centralização horizontal*/
+  align-items: center; /*Centralização vertical*/
+  /* position: relative;
+  margin-top: -100px;
+  right: -150px; */
+  
+}
+.area{
+  display: flex;
+  justify-content: center;
 }
 
+button{
+  height: 3em;
+  width: 100%;
+  background-color: #FF9500;
+  border: none;
+  color: rgb(255, 255, 255);
+}
+button:hover{
+  cursor: pointer;
+}

@@ -1,119 +1,301 @@
 .areaDados {
-  height: 100vh;
-  margin-bottom: 102px;
-  background-color: #ffffff;
+  background-color: #fdfdfd;
+  justify-content: space-between;
+  display: flex;
+  
+}
+
+#principal{
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: -450px;
+  height: 850px;  
+}
+
+#quemsomos{
+  display: block;
+  color: #000000;
 }
 
 
- body { 
- height: 100%;
+#calc{
+  display: flex;
+
+  
+
 }
 
 
 
+ 
+  
+  
 
+
+
+
+
+
+
+
+#menu-contraido {
+  width: 350px;
+  left: -180px;
+  top: -250px;
+  position: relative;
+  display: block;
+}
+
+#quemsomos{
+  position: relative;
+  top: -250px;
+  left: -180px;
+  width: 1500px;
+  display: block;
+}
+
+#menu-imc{
+  left: -160px;
+  top: -359px;
+  position: relative;
+  display: block;
+  background-color:  #ffffff;
+
+}  
+
+  
+
+  
+
+
+  
+  /* O seletor ~ seleciona o elemento irmão */
+ 
+main {
+    display: flex;
+    justify-content: flex-end; /*Centralização horizontal*/
+
+}
+
+section {
+    display: flex;
+    justify-content: center; /*Centralização horizontal*/
+    align-items: center; /*Centralização vertical*/
+    flex-direction: column; /*itens filhos em coluna na vertical*/
+    width: 95%;
+    margin: 300px;
+}
+
+section h1 {
+    padding: 10px;
+    color: #000000;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 3px 3px 4px #8f8e8e;
+    font-size: 1.5rem;
+}
 
 aside {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /*Centralização horizontal*/
-  align-items: center; /*Centralização vertical*/
-  width: 25%;
-  margin: 5px;
-  color: var(--cor-texto2);
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*Centralização horizontal*/
+    align-items: center; /*Centralização vertical*/
+    width: 25%;
+    margin: 5px;
+    color: var(--cor-texto2);
+    }
 
+aside img {
+    max-width: 180px;
+    max-height: 180px;
+    margin-top: 10px;
+    border-radius: 400px;
+    filter: grayscale(100%);   
+}
 
 aside a {
-color: var(--cor-texto2);
-text-decoration: none;
+  transition: 300ms;
 }
 
 aside a:hover {
-color: var(--cor-texto2);
-text-decoration: underline;
+  filter: brightness(0.8)
 }
 
-article {
-  display: flex;
-  text-align: justify;
-  background-color: rgb(255, 255, 255);
-  min-height: 100px;
-  width: 100%;
+aside a {
   color: var(--cor-texto2);
-  padding: 30px;
-  
+  text-decoration: none;
 }
+
+aside a:hover {
+  color: var(--cor-texto2);
+  text-decoration: underline;
+}
+
+
 
 article p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+    color: var(--cor-texto2)
 }
 
 article a {
-color: var(--cor-texto2);
-text-decoration: none;
+  color: var(--cor-texto2);
+  text-decoration: none;
 }
 
 article a:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
 
+article img {
+    max-width: 350px;
+    border-radius: 700px;
+    margin: 20px;
+}
 
+.livro {
+    border-radius: 0px;
+}
 
-h2{
-  color: #000000;
-}h1{
-  margin-block-start: 0em; 
-  color: rgb(0, 0, 0);
-}
-.input_area{
-  width: 100%;
-  display: flex;
-  top: 150px;
-  align-items: center;
-  justify-content: space-between;
-}
-input{
-  height: 1.5em;
-}
-textarea{
-  width: 100%;
-  margin-top: 2em;
-}
-.imc{
-  background-color: #fdfdfd;
-  display: inline-flex;
-  padding: 1.5em;
-  border-radius: 0.5em;
-  flex-direction: column;
-  align-items: center;
-  width: 20em;
-  margin-left: 1000px;
-  top: 150px;
-  justify-content: center; /*Centralização horizontal*/
-  align-items: center; /*Centralização vertical*/
-  position: relative;
-  margin-top: -1520px;
-  right: -150px;
+/**************************************************
+             REGRAS DE RESPONSIVIDADE
+***************************************************/
+
+/* Computadores com tela pequena */
+@media (max-width: 1200px) {
+    body {
+      /*filter: hue-rotate(45deg);*/
+    }
   
-}
-.area{
-  display: flex;
-  justify-content: center;
-}
+    /* Esconde o texto das redes sociais */
+    #social ul li a span {
+      display: none; /* Não preserva o espaço do elemento */
+    }
+  
+    /* Ajusta o flex-direction do main para column para
+      passar o aside para baixo */
+    main {
+      flex-direction: column;
+    }
+  
+    /* section e aside passam a ter largura de 100% */
+    section, aside {
+      /* Usa a função calc() para descontar os 40px das margens
+        laterais dos elementos e evitar rolagem horizontal */
+      width: calc(100% - 40px);
+    }
+  
+    /* Os anúncios do article ficam na horizontal */
+    aside {
+      flex-direction: row;
+      /* Faz com que os articles fiquem com a mesma altura */
+      align-items: stretch;
+    }
+  
+   /* aside article {
+      margin: 0 30px;
+    }*/
+  }
+  
+  /* Dispositivos (tablets) */
+  @media (max-width: 992px) {
+    aside {
+      flex-direction: column;
+      /* "Desliga" o stretch do breakpoint anterior */
+      align-items: center;
+    }
+  }
 
-button{
-  height: 3em;
-  width: 100%;
-  background-color: #FF9500;
-  border: none;
-  color: white;
-}
-button:hover{
-  cursor: pointer;
-}
+    
+  
+  /* Dispositivos (celulares) médios */
+  @media (max-width: 768px) {
+    body {
+      /*filter: hue-rotate(135deg);*/
+    }
+  
+    #menu-principal {
+      min-height: 56px;
+      padding: 0;
+      margin-top: 0;
+    }
+  
+    #menu-contraido {
+      margin-top: 40px;
+      width: 100%;
+    }
+  
+    #menu-contraido input, #menu-contraido span {
+      display: block; /* Reexibe o botão do menu */
+      left: 20px;
+      top: -38px;
+    }
+  
+    #menu-contraido ul {
+      display: none;    /* Esconder o menu */
+      margin-top: 30px;
+    }
+  
+    #menu-contraido ul li {
+      display: block;
+      margin: 6px 0;
+    }
+  
+    #menu-contraido ul li a {
+      width: 100%;
+      display: flex;
+    }
+  
+    #menu-contraido input:checked ~ ul {
+      display: block; /* Reexibe o menu quando o checkbox for marcado */
+    }
+  
+    #menu-contraido input:checked,  #menu-contraido input:checked ~ span {
+      top: -30px;
+    }
 
+    article aside {
+      width: 100%;
+    }
+    
+    article img {
+      max-width: 150px;
+    }
 
+    /* Os anúncios do article voltam a ficar na vertical */
+    aside {
+      flex-direction: column;
+      /* "Desliga" o stretch do breakpoint anterior */
+      align-items: center;
+    }
+    
+    aside img {
+      max-width: 150px;
+    }
 
-
+    aside article {
+      margin: 30px 0;
+    }
+  
+    /* Empilha os elementos do footer */
+    footer {
+      flex-direction: column;
+    }
+  
+    footer img, footer address {
+      margin-bottom: 20px;
+    }
+  
+  }
+  
+  /* Dispositivos (celulares) pequenos */
+  @media (max-width: 576px) {
+    body {
+      /*filter: hue-rotate(180deg);*/
+    }
+  
+    /* Empilha os elementos do header */
+    header {
+      flex-direction: column;
+    }
+  }
