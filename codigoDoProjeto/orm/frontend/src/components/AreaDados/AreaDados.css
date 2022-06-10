@@ -61,4 +61,59 @@ text-decoration: underline;
 
 
 
+h2{
+  color: #000000;
+}h1{
+  margin-block-start: 0em; 
+  color: rgb(0, 0, 0);
+}
+.input_area{
+  width: 100%;
+  display: flex;
+  top: 150px;
+  align-items: center;
+  justify-content: space-between;
+}
+input{
+  height: 1.5em;
+}
+textarea{
+  width: 100%;
+  margin-top: 2em;
+}
+.imc{
+  background-color: #fdfdfd;
+  display: inline-flex;
+  padding: 1.5em;
+  border-radius: 0.5em;
+  flex-direction: column;
+  align-items: center;
+  width: 20em;
+  margin-left: 1000px;
+  top: 150px;
+  justify-content: center; /*Centralização horizontal*/
+  align-items: center; /*Centralização vertical*/
+  position: relative;
+  margin-top: -1520px;
+  right: -150px;
+  
+}
+.area{
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  height: 3em;
+  width: 100%;
+  background-color: #FF9500;
+  border: none;
+  color: white;
+}
+button:hover{
+  cursor: pointer;
+}
+
+
+
 

@@ -20,10 +20,24 @@ export default function AreaDados() {
       </aside>
     </div>
       <div className="video">
-      <aside>
-        <iframe width="560" height="315" left="300px" src="https://www.youtube.com/embed/XozkTgpyxeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe> 
-        </aside>
       </div>
+      <article>
+          <div class="area">
+            <div className ="imc">
+                <h1>Calculador de IMC</h1>
+                  <div class="input_area">
+                      <h2>Altura (cm) </h2>
+                      <input id="height" type="number"></input>
+                  </div>
+                <div class="input_area">
+                  <h2 h2>Peso (kg) </h2>
+                    <input id="weight" type="number"></input>
+                </div>
+              <button onclick="calculate()">Calcular</button>
+              <textarea name="" id="text_area" rows="8"></textarea>
+            </div>
+          </div>
+        </article>
   </body>
 </html>
     
