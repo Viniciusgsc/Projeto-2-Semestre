@@ -1,8 +1,7 @@
 const Sequelize = require('sequelize')
 const dbConfig = require('../config/database.js')
 
-const categorias = require('../api/models/categoriasModels')
-const departamentos = require('../api/models/departamentosModels')
+const pacientes = require('../api/models/pacientesModels')
 
 const conexao = new Sequelize(dbConfig)
 
@@ -13,7 +12,7 @@ try{
     console.log('Falha na conexão Mysql!!!')
 }
 
-categorias.init(conexao)
-departamentos.init(conexao)
+pacientes.init(conexao)
+
 
 module.exports = conexao;

@@ -1,4 +1,4 @@
-.categorias {
+.pacientes {
 
   text-align: center;
   height: 20vh;
@@ -57,6 +57,21 @@ tbody > tr {
 }
 
 #p_descricao{
+  width: 50vw;
+  padding-left: 0.5vw;  
+  text-align: left;
+}
+#p_altura{
+  width: 50vw;
+  padding-left: 0.5vw;  
+  text-align: left;
+}
+#p_idade{
+  width: 50vw;
+  padding-left: 0.5vw;  
+  text-align: left;
+}
+#p_sexo{
   width: 50vw;
   padding-left: 0.5vw;  
   text-align: left;

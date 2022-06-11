@@ -1,7 +1,7 @@
 import React from "react";
 import TabelaHeader from "./CategoriasHeader";
 import TabelaFooter from "./CategoriasFooter";
-import Categorias from "../Categorias/Categorias";
+import Pacientes from "../Pacientes/Pacientes";
 
 export default function Tabela(props) {
 
@@ -16,7 +16,7 @@ export default function Tabela(props) {
                 <thead>
                     <tr>
                         <th scope="col"> Código </th>
-                        <th scope="col"> Descrição da Categoria </th>
+                        <th scope="col"> Descrição de Pacientes </th>
                         <th scope="col"> Inclusão </th>
                         <th scope="col"> Alteração </th>
                     </tr>
@@ -28,7 +28,7 @@ export default function Tabela(props) {
 
                     <tr>
                         <td>{item.id}</td>
-                        <td>{item.cat_descricao}</td>
+                        <td>{item.pac_descricao}</td>
                         <td>{item.created_at}</td>
                         <td>{item.updated_at}</td>
 

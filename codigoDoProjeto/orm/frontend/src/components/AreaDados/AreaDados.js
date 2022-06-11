@@ -8,7 +8,6 @@ export default function AreaDados() {
   <div className="areaDados">
       <aside>
       <div className="imageem">
-      
       </div>  
         <article>
           <div class="area">
@@ -31,6 +30,5 @@ export default function AreaDados() {
     </div>
   </body>
   ); 
-   
 }
 

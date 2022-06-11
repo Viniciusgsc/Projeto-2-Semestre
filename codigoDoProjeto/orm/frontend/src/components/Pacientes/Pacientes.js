@@ -7,34 +7,37 @@ import api from "../../services/api.js"
 
 import Moment from 'react-moment'
 
-import "./Categorias.css"
+import "./Pacientes.css"
 import Geral from "../Geral/Geral.js";
 
-function Categorias() {
+function Pacientes() {
 
-  const [categorias, setCategorias] = useState([])
+  const [pacientes, setPacientes] = useState([])
 
   useEffect(() => {
-    api.get('categorias')
-      .then(response => setCategorias(response.data))
+    api.get('pacientes')
+      .then(response => setPacientes(response.data))
 
   }, []
   )
 
   return (
 
-    <div id="idCategorias" className="categorias">
+    <div id="idPacientes" className="pacientes">
       <Cabecalho />
       <MenuHorizontal />
       
-      <legend>Registros de usuários Cadastrados</legend>
+      <legend>Registros de Pacientes Cadastrados</legend>
 
       <div className="tabela">
         <table className="table table-responsive">
           <thead>
             <tr id='titulo'>
               <th id='t_codigo'> Código </th>
-              <th id='t_descricao'> Descrição dos usuários </th>
+              <th id='t_descricao'> Nome do Paciente </th>
+              <th id='t_altura'> Altura do Paciente </th>
+              <th id='t_altura'> Idade do Paciente </th>
+              <th id='t_idade'> Sexo do Paciente </th>
               <th id='t_dtinclusao'> Inclusão </th>
               <th id='t_dtalteracao'> Alteração </th>
               <th id="novo"> <a class="btn btn-success btn-block">Novo Registro</a> </th>              
@@ -45,12 +48,15 @@ function Categorias() {
           <br></br>
 
           <tbody>
-            {categorias.map((item, i) => {
+            {pacientes.map((item, i) => {
               return (
                 <>
                   <tr>
                     <td id="p_codigo">{item.id}</td>
-                    <td id='p_descricao'>{item.cat_descricao}</td>
+                    <td id='p_descricao'>{item.pac_descricao}</td>
+                    <td id='p_altura'>{item.pac_altura}</td>
+                    <td id='p_idade'>{item.pac_idade}</td>
+                    <td id='p_altura'>{item.pac_sexo}</td>
 
                     <td id="p_dtinclusao"><Moment format="DD/MM/YYYY">{(item.createdAt)}</Moment> </td>
 
@@ -67,7 +73,7 @@ function Categorias() {
           </tbody>
           <tfoot>
             <tr id='registros'>
-              <td>Quantidade de registros: {categorias.length} </td>
+              <td>Quantidade de registros: {pacientes.length} </td>
             </tr>
           </tfoot>
         </table>
@@ -77,7 +83,7 @@ function Categorias() {
 
 }
 
-export default Categorias;
+export default Pacientes;
 
 //<td id="editar"> <a class="btn btn-primary btn-block" href=<%="/autores/editar/" + obj_autores[i].aut_codigo %>> Editar </a></td>
 //<td id="ativar"> <a class="btn btn-danger btn-block" href=<%="/autores/ativoInativo/" + obj_autores[i].aut_codigo %>> Inativar </a></td>

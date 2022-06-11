@@ -12,7 +12,7 @@ function MenuHorizontal() {
         <nav className="navMenu">
           <ul className="menus">
             <li> <Link to="/">Home/Imc</Link> </li>          
-            <li> <Link to="/categorias">Tabela dos Usuários </Link> </li>
+            <li> <Link to="/pacientes">Tabela dos Pacientes </Link> </li>
             <li> <Link to="/departamentos"></Link></li>          
           </ul>
         </nav>
